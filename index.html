@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenGym</title>
     <style>
-        body {
+        html, body {
+            height: 100%; /* Ensure full height of the viewport */
             margin: 0;
             padding: 0;
             background-color: black;
             color: white;
             font-family: 'Geist Mono', monospace;
+            display: flex; /* Flex container */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
         }
-
         h1 {
             text-align: center;
-            font-size: 2em; /* Responsive font size */
+            /* Responsive font size that scales with the viewport width */
+            font-size: clamp(2em, 8vw, 12em); /* Minimum size, scaling size, maximum size */
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono&display=swap" rel="stylesheet">
